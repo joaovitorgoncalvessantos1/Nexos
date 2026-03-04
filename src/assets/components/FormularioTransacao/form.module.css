@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.Botao{
+  padding: 0.6rem 1rem; 
+  border-radius: 8px; 
+  border: 1px solid var(--color-primary); 
+  outline: none;        
+  font-size: 1rem;
+  color: var(--color-background);
+  transition: all 0.3s ease; 
+  background-color:var(--color-primary);
+}
+.Botao:hover{
+  background-color: var(--color-primary-hover);
+}
+.Input{
+ padding: 0.6rem 1rem; 
+  border-radius: 8px; 
+  border: 1px solid var(--color-primary); 
+  outline: none;        
+  font-size: 1rem;
+  transition: all 0.3s ease; 
+  background-color: var( --color-background);
+}
+.Input::placeholder{
+  font-size: 1rem;
+ 
+}
+.Input:hover{
+  border-color: var(  --color-primary-hover);
+}
+.Select{
+   padding: 0.6rem 1rem; 
+  border-radius: 8px; 
+  border: 1px solid var(--color-primary); 
+  outline: none;        
+  font-size: 1rem;
+  transition: all 0.3s ease; 
+  background-color: var( --color-background);
+}

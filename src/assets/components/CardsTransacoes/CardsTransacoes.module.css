@@ -1,0 +1,14 @@
+.CardsTransacoes {
+    padding: 1rem;
+  text-align: center; 
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 16px;
+}
+.CardsTransacoes h1{
+  font-size: 20px;
+  color: var( --color-text-primary);
+}
+.CardsTransacoes p{
+    color: var(--color-success);
+
+}

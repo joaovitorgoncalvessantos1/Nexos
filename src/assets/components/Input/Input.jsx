@@ -1,0 +1,7 @@
+import React from 'react'
+
+function Input({type,placeholder,onChange,className}) {
+  return (<input type={type} placeholder={placeholder}  onChange={onChange} className={className}/>   )
+}
+
+export default Input
