@@ -9,18 +9,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-surface);
+ 
+  gap: 17px;
+ 
 }
 .Nav_avatar {
   border-radius: 50%;
-  background-color: var(---color-border);
+  
 }
 .Nav_link {
+  padding: 0.9rem;
+  font-weight: 900;
   text-decoration: none;
-  color: var(--color-text-secondary);
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
 }
 .Nav_link:hover {
-  color: var(--color-primary);
+  color: var( --color-primary-hover);
+     transition: all 0.9s ease;
+     font-size: 18px;
 }
+

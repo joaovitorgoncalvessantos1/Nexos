@@ -1,5 +1,5 @@
 import styles from './CardsTransacoes.module.css'
-function CardsTransacoes({titulo,valor}) {
+function CardsTransacoes({titulo,valor,className}) {
   return (
 <div className={styles.CardsTransacoes}>
     <h1>{titulo}</h1>

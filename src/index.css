@@ -15,7 +15,7 @@
 
   
   --color-background: #F8FAFC;
-  --color-surface: #FFFFFF;
+  --color-surface: #eeecec;
   --color-border: #e2e8f019;
 
   --color-text-primary: #0F172A;
@@ -40,5 +40,5 @@
     padding: 0;
     box-sizing: border-box;
      font-family: var(--font-family-base);
-  
+  background-color: var( --color-surface);
 }

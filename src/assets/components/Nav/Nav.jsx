@@ -9,8 +9,8 @@ function Nav() {
      <img src={logo} alt="logo da nexo" width={100}/>
       </div>
       <div className={styles.Nav_menu}>
-   <img src={logo_rafael} className={styles.Nav_avatar} alt="" width={90} />
-        <a href="#" className={styles.Nav_link}>Logaut</a>
+<a href="#" className={styles.Nav_link} >Grafico</a>
+{/*         <a href="#" className={styles.Nav_link}>Logaut</a> */}
       </div>
     </nav>
   );

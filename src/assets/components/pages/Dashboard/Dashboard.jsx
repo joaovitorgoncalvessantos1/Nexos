@@ -24,18 +24,20 @@ function Dashboard() {
       <Conteiner>
         <CardsTransacoes titulo="Total de entradas" valor={resumo.totalEntradas} />
 
-        <CardsTransacoes titulo="Total de saídas" valor={resumo.totalSaidas} />
+        <CardsTransacoes cl titulo="Total de saídas" valor={resumo.totalSaidas} />
 
         <CardsTransacoes titulo="Saldo" valor={resumo.saldo}  />
       </Conteiner>
+      
 
       <Card>
         <FormularioTransacao
           adicionarTransacao={adicionarTransacao}
         ></FormularioTransacao>
+     
       </Card>
 
-      <Card>
+      <Card >
         <ListaTransacao transacoes={transacoes}>
   
         </ListaTransacao>
