@@ -12,7 +12,7 @@ Preview do projeto
 
 ## 🌐 Projeto online
 
-🔗 [Clique aqui para acessar]([https://seuprojeto.vercel.app](https://joaovitorgoncalvessantos1.github.io/Nexos/])
+🔗 [Clique aqui para acessar,(https://joaovitorgoncalvessantos1.github.io/Nexos/)]
 
 ## Tecnologias utilizadas
 
@@ -86,5 +86,6 @@ Este projeto faz parte do meu processo de aprendizado em **desenvolvimento front
 ## Autor
 
 Desenvolvido por João.
+
 
 
