@@ -38,9 +38,10 @@ function Dashboard() {
       </Card>
 
       <Card >
-        <ListaTransacao transacoes={transacoes}>
-  
-        </ListaTransacao>
+<ListaTransacao
+  transacoes={transacoes}
+  setTransacoes={setTransacoes}
+/>
       </Card>
 
     </>

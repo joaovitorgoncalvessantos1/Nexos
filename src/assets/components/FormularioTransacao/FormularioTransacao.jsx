@@ -16,6 +16,7 @@ function FormularioTransacao({ adicionarTransacao }) {
   function handleSubmit(event) {
     event.preventDefault();
     const novaTransacao = {
+        id: Date.now(),
       tipo: saida,
       valor: valor,
       descricao: descricao,

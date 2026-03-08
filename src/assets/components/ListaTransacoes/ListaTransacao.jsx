@@ -2,12 +2,12 @@ import Botao from "../Botao/Botao";
 import styles from "./ListaTransacao.module.css";
 import { MdDelete } from "react-icons/md";
 
-function ListaTransacao({ transacoes }) {
-  function removerItem(transacoes,index){
-   transacoes.filter((transacaoRemove)=>( console.log(teste)))
-   
-   
-  }
+function ListaTransacao({ transacoes,setTransacoes}) {
+function removerItem(id) {
+  
+  const novaLista = transacoes.filter(transacao => transacao.id !== id)
+  setTransacoes(novaLista)
+}
   return (
     <table className={styles.tabela}>
       <thead>
@@ -19,14 +19,14 @@ function ListaTransacao({ transacoes }) {
         </tr>
       </thead>
       <tbody className={styles.pai}>
-        {transacoes.map((transacao, index) => (
-          <tr key={index}>
+        {transacoes.map((transacao) => (
+          <tr key={transacao.id}>
             <td>{transacao.tipo}</td>
             <td>{transacao.valor}</td>
             <td>{transacao.descricao} </td>
             <td >
               
-              <Botao onClick={removerItem}className={styles.Botao} texto={<MdDelete  />}></Botao>
+              <Botao onClick={() => removerItem(transacao.id)} className={styles.Botao} texto={<MdDelete  />}></Botao>
             </td>
           </tr>
         ))}

@@ -27,3 +27,6 @@
   color: var(--color-text-primary);
   transition: all 0.3s ease; 
  }
+ .Botao:hover{
+  color: var( --color-danger);
+ }
