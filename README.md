@@ -10,6 +10,10 @@ Preview do projeto
 
 ![Preview do projeto](./preview.png)
 
+## 🌐 Projeto online
+
+🔗 [Clique aqui para acessar]([https://seuprojeto.vercel.app](https://joaovitorgoncalvessantos1.github.io/Nexos/))
+
 ## Tecnologias utilizadas
 
 * React
@@ -47,7 +51,8 @@ Algumas funcionalidades planejadas para as próximas versões:
 
 Clone o repositório:
 
-git clone https://github.com/seu-usuario/nexos.git
+git clone https://github.com/joaovitorgoncalvessantos1/
+Nexos.git
 
 Entre na pasta do projeto:
 
@@ -81,3 +86,4 @@ Este projeto faz parte do meu processo de aprendizado em **desenvolvimento front
 ## Autor
 
 Desenvolvido por João.
+
