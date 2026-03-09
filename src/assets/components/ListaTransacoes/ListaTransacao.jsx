@@ -2,12 +2,16 @@ import Botao from "../Botao/Botao";
 import styles from "./ListaTransacao.module.css";
 import { MdDelete } from "react-icons/md";
 
-function ListaTransacao({ transacoes,setTransacoes}) {
-function removerItem(id) {
-  
-  const novaLista = transacoes.filter(transacao => transacao.id !== id)
-  setTransacoes(novaLista)
-}
+function ListaTransacao({ transacoes, setTransacoes }) {
+  function removerItem(id) {
+     const confirmar = window.confirm("Tem certeza que deseja excluir?");
+
+  if (!confirmar) return;
+    const novaLista = transacoes.filter((transacao) => transacao.id !== id);
+    setTransacoes(novaLista);
+      localStorage.setItem("Transacoes", JSON.stringify(novaLista));
+
+  }
   return (
     <table className={styles.tabela}>
       <thead>
@@ -24,9 +28,12 @@ function removerItem(id) {
             <td>{transacao.tipo}</td>
             <td>{transacao.valor}</td>
             <td>{transacao.descricao} </td>
-            <td >
-              
-              <Botao onClick={() => removerItem(transacao.id)} className={styles.Botao} texto={<MdDelete  />}></Botao>
+            <td>
+              <Botao
+                onClick={() => removerItem(transacao.id)}
+                className={styles.Botao}
+                texto={<MdDelete />}
+              ></Botao>
             </td>
           </tr>
         ))}

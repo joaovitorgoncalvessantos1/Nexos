@@ -12,6 +12,22 @@ function FormularioTransacao({ adicionarTransacao }) {
   const [valor, setValor] = useState("");
   const [descricao, setDescricao] = useState("");
   const [mensagem, setMensagem] = useState("")
+ 
+  function salvarLocalStore(valor, id, descricao, tipo) {
+
+  const transacao = {
+    id: id,
+    saida: tipo,
+    descricao: descricao,
+    valor: valor
+  }
+
+  const transacoes = JSON.parse(localStorage.getItem("Transacoes")) || [];
+
+  transacoes.push(transacao);
+
+  localStorage.setItem("Transacoes", JSON.stringify(transacoes));
+}
   
   function handleSubmit(event) {
     event.preventDefault();
@@ -30,6 +46,11 @@ feedBackUx(
   novaTransacao,
   setMensagem
 );
+
+salvarLocalStore(valor,descricao,novaTransacao.id,saida)
+
+
+
   
   }
   return (
