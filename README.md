@@ -66,7 +66,6 @@ O objetivo é reduzir a complexidade e entregar uma experiência leve, direta e 
 
 ## Melhorias futuras
 
--  Persistência de dados com LocalStorage
 -  Histórico de transações com data e hora (em desenvolvimento)
 -  Gráficos de gastos e entradas
 -  Categorias de transações
