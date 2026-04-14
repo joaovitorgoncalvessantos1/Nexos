@@ -50,9 +50,12 @@ feedBackUx(
 salvarLocalStore(valor,descricao,novaTransacao.id,saida)
 
 
-
+ setDescricao('')
+ setSaida(0)
+ setValor('')
   
   }
+
   return (
     <>
   
@@ -66,6 +69,7 @@ salvarLocalStore(valor,descricao,novaTransacao.id,saida)
             id="saldo"
             value={saida}
             onChange={(event) => setSaida(event.target.value)}
+            
           >
             <Option value='Selecione um tipo' texto='Selecione um tipo'/>
             <Option value="Saida" texto="Saida" />
@@ -77,16 +81,19 @@ salvarLocalStore(valor,descricao,novaTransacao.id,saida)
           className={styles.Input}
           type={"number"}
           placeholder={"0,00"}
+    value={valor}
           onChange={(event) => setValor(event.target.value)}
         ></Input>
         
         <Input
           className={styles.Input_descricao}
           onChange={(event) => setDescricao(event.target.value)}
+          value={descricao}
           type={"texto"}
           placeholder={"Descrição"}
         ></Input>
         <Botao
+      onClick={() => limparForm()}
           className={styles.Botao}
           texto={"Adicionar"}
           type={"submit"}
